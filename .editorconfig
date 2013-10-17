@@ -9,7 +9,7 @@ root = true
 
 # defaults for all filetypes
 [*]
-charset = "utf-8"
+charset = utf-8
 end_of_line = lf
 indent_style = space
 indent_size = 4
@@ -19,7 +19,7 @@ trim_trailing_whitespace = true
 curly_bracket_next_line = false
 spaces_around_operators = true
 spaces_around_brackets = false
-indent_brace_style = "KNF"
+indent_brace_style = KNF
 
 [*.html]
 trim_trailing_whitespace = false
