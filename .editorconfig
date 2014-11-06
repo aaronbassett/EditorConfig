@@ -13,7 +13,9 @@ charset = utf-8
 end_of_line = lf
 indent_style = space
 indent_size = 4
+max_line_length = 79
 trim_trailing_whitespace = true
+insert_final_newline = true
 
 # Experimental / Domain specific properties
 curly_bracket_next_line = false
@@ -23,10 +25,22 @@ indent_brace_style = KNF
 
 [*.{html,htm}]
 trim_trailing_whitespace = false
+insert_final_newline = false
 
 [*.py]
-insert_final_newline = true
 max_line_length = 99
+
+# Rubyists like to hide their nested conditionals
+[*.{rb}]
+indent_size = 2
+
+# Coffeescript inherited Ruby's bad habits
+[*.{coffee,coffeescript}]
+indent_size = 2
+
+[*.js]
+indent_size = 2
 
 [Makefile]
 indent_style = tab
+insert_final_newline = false
